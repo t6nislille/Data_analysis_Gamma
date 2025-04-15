@@ -10,8 +10,7 @@ print(sample_set)
 # # Iterate through names list and add names that are longer than 5 characters
 # # to long_names, and others to short names
 names = ['Sarah', 'Jessica', 'Anthony', 'Jack', 'Simon', 'Arthur', 'Maria', 'Samantha']
-long_names = []
-short_names = []
+long_names, short_names = [], []
 for name in names:
     if len(name) > 5:
         long_names.append(name)
@@ -28,7 +27,7 @@ print(short_names)
 # but not a multiple of 100 OR if it is a multiple of 400.
 years_list = [2012, 2011, 1492, 1861, 1600, 1700, 1800, 1900, 2000]
 for year in years_list:
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
         print(year, "YES")
     else:
         print(year, "NO")

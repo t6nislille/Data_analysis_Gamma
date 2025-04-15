@@ -1,6 +1,7 @@
 # Return "Hero" from given string
 example_string = "Hello bro"
 print(example_string[:2] + example_string[7:])
+print(example_string[:2] + example_string[-2:]) # Both ways are correct
 
 # Return "Jack is my name" from example
 example_string2 = "jack Is My NAME"
@@ -9,6 +10,10 @@ print(example_string2.capitalize())
 #Return "Get rid of junk please" from example
 example_string3 = "%-*Get rid of *junk* please*-L%*"
 print(example_string3.strip("%-*L").replace("*", " "))
+
+# Write code to return "Hello my name is Jack
+example_string4 = "hello my name is Jack"
+print(example_string4.capitalize().replace("jack", "Jack"))
 
 # Find all occurrences of “Estonia” in a given string ignoring the case.
 example_string5 = "Welcome to estonia. Estonia is awesome, isn't it? I moved to ESTONIA 5 years ago."
